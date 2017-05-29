@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -57,92 +57,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="hi-link">
-<packages>
-<package name="FX758">
-<wire x1="-11" y1="9" x2="11" y2="9" width="0.127" layer="21"/>
-<wire x1="11" y1="9" x2="11" y2="-10" width="0.127" layer="21"/>
-<wire x1="11" y1="-10" x2="-11" y2="-10" width="0.127" layer="21"/>
-<wire x1="-11" y1="-10" x2="-11" y2="9" width="0.127" layer="21"/>
-<smd name="P$1" x="-11.5" y="-5.5" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$2" x="-11.5" y="-2.96" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$4" x="-11.5" y="-0.42" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$3" x="-11.5" y="2.12" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$5" x="-11.5" y="4.66" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$6" x="11.5" y="-5.5" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$7" x="11.5" y="-2.96" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$8" x="11.5" y="-0.42" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$9" x="11.5" y="2.12" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$10" x="11.5" y="4.66" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="P$11" x="11.5" y="7.2" dx="2.1844" dy="1.0668" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FX758">
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<pin name="GND@1" x="-17.78" y="7.62" length="middle"/>
-<pin name="ANT" x="-17.78" y="5.08" length="middle"/>
-<pin name="GND@2" x="-17.78" y="2.54" length="middle"/>
-<pin name="CS3" x="-17.78" y="0" length="middle"/>
-<pin name="CS2" x="-17.78" y="-2.54" length="middle"/>
-<pin name="CS1" x="-17.78" y="-5.08" length="middle"/>
-<pin name="VIN" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="A6.5" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GND@3" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="+5V" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND@4" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="10.16" size="1.778" layer="94">&gt;NAME</text>
-<text x="5.08" y="10.16" size="1.778" layer="94">FX758</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FX758">
-<description>&lt;h4&gt;FX758-2 5.8G 200mW 32CH FPV Wireless Audio Video AV Transmitter Module&lt;/h4&gt;
-&lt;table&gt;
-&lt;tr&gt;&lt;td&gt;Factory number:&lt;/td&gt;&lt;td&gt;FXT758-2&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Voltage:&lt;/td&gt;&lt;td&gt; 5V&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Power: &lt;/td&gt;&lt;td&gt;200mW&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Frequency: &lt;/td&gt;&lt;td&gt;5725MHz-5945MHz&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Size:&lt;/td&gt;&lt;td&gt;22x19 mm&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Modulation type: &lt;/td&gt;&lt;td&gt;FM&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Working temperature:&lt;/td&gt;&lt;td&gt; -10℃- +60℃&lt;/td&gt;&lt;/tr&gt;
- &lt;/table&gt;
-
-&lt;/table&gt;
-&lt;tr&gt;&lt;td colspan="2"&gt;Transmission frequency group:&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;A: Ch1:5725MHz Ch2:5745MHz Ch3:5765MHz Ch4:5785MHz Ch5:5805MHz Ch6:5825MHz Ch7:5845MHz Ch8:5865MHz&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;B: Ch1:5733MHz Ch2:5752MHz Ch3:5771MHz Ch4:5790MHz Ch5:5809MHz Ch6:5828MHz Ch7:5847MHz Ch8:5866MHz&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;C: Ch1:5645MHz Ch2:5665MHz Ch3:5685MHz Ch4:5705MHz Ch5:5885MHz Ch6:5905MHz Ch7:5925MHz Ch8:5945MHz &lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;</description>
-<gates>
-<gate name="G$1" symbol="FX758" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FX758">
-<connects>
-<connect gate="G$1" pin="+5V" pad="P$2"/>
-<connect gate="G$1" pin="A6.5" pad="P$4"/>
-<connect gate="G$1" pin="ANT" pad="P$10"/>
-<connect gate="G$1" pin="CS1" pad="P$6"/>
-<connect gate="G$1" pin="CS2" pad="P$7"/>
-<connect gate="G$1" pin="CS3" pad="P$8"/>
-<connect gate="G$1" pin="GND@1" pad="P$11"/>
-<connect gate="G$1" pin="GND@2" pad="P$9"/>
-<connect gate="G$1" pin="GND@3" pad="P$3"/>
-<connect gate="G$1" pin="GND@4" pad="P$1"/>
-<connect gate="G$1" pin="VIN" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-coax">
 <description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
 Radiall  and M/A COM.&lt;p&gt;
@@ -545,6 +459,92 @@ distributor RS 193-9117</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="custom-parts">
+<packages>
+<package name="FX758">
+<wire x1="-11" y1="9" x2="11" y2="9" width="0.127" layer="21"/>
+<wire x1="11" y1="9" x2="11" y2="-10" width="0.127" layer="21"/>
+<wire x1="11" y1="-10" x2="-11" y2="-10" width="0.127" layer="21"/>
+<wire x1="-11" y1="-10" x2="-11" y2="9" width="0.127" layer="21"/>
+<smd name="P$1" x="-11.5" y="-5.5" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$2" x="-11.5" y="-2.96" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$4" x="-11.5" y="-0.42" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$3" x="-11.5" y="2.12" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$5" x="-11.5" y="4.66" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$6" x="11.5" y="-5.5" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$7" x="11.5" y="-2.96" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$8" x="11.5" y="-0.42" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$9" x="11.5" y="2.12" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$10" x="11.5" y="4.66" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="P$11" x="11.5" y="7.2" dx="2.1844" dy="1.0668" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FX758">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<pin name="GND@1" x="-17.78" y="7.62" length="middle"/>
+<pin name="ANT" x="-17.78" y="5.08" length="middle"/>
+<pin name="GND@2" x="-17.78" y="2.54" length="middle"/>
+<pin name="CS3" x="-17.78" y="0" length="middle"/>
+<pin name="CS2" x="-17.78" y="-2.54" length="middle"/>
+<pin name="CS1" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VIN" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="A6.5" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GND@3" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="+5V" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND@4" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="10.16" size="1.778" layer="94">&gt;NAME</text>
+<text x="5.08" y="10.16" size="1.778" layer="94">FX758</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FX758">
+<description>&lt;h4&gt;FX758-2 5.8G 200mW 32CH FPV Wireless Audio Video AV Transmitter Module&lt;/h4&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;Factory number:&lt;/td&gt;&lt;td&gt;FXT758-2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Voltage:&lt;/td&gt;&lt;td&gt; 5V&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Power: &lt;/td&gt;&lt;td&gt;200mW&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Frequency: &lt;/td&gt;&lt;td&gt;5725MHz-5945MHz&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Size:&lt;/td&gt;&lt;td&gt;22x19 mm&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Modulation type: &lt;/td&gt;&lt;td&gt;FM&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Working temperature:&lt;/td&gt;&lt;td&gt; -10℃- +60℃&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+
+&lt;/table&gt;
+&lt;tr&gt;&lt;td colspan="2"&gt;Transmission frequency group:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;A: Ch1:5725MHz Ch2:5745MHz Ch3:5765MHz Ch4:5785MHz Ch5:5805MHz Ch6:5825MHz Ch7:5845MHz Ch8:5865MHz&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;B: Ch1:5733MHz Ch2:5752MHz Ch3:5771MHz Ch4:5790MHz Ch5:5809MHz Ch6:5828MHz Ch7:5847MHz Ch8:5866MHz&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C: Ch1:5645MHz Ch2:5665MHz Ch3:5685MHz Ch4:5705MHz Ch5:5885MHz Ch6:5905MHz Ch7:5925MHz Ch8:5945MHz &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
+<gates>
+<gate name="G$1" symbol="FX758" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FX758">
+<connects>
+<connect gate="G$1" pin="+5V" pad="P$2"/>
+<connect gate="G$1" pin="A6.5" pad="P$3"/>
+<connect gate="G$1" pin="ANT" pad="P$10"/>
+<connect gate="G$1" pin="CS1" pad="P$6"/>
+<connect gate="G$1" pin="CS2" pad="P$7"/>
+<connect gate="G$1" pin="CS3" pad="P$8"/>
+<connect gate="G$1" pin="GND@1" pad="P$4"/>
+<connect gate="G$1" pin="GND@2" pad="P$1"/>
+<connect gate="G$1" pin="GND@3" pad="P$11"/>
+<connect gate="G$1" pin="GND@4" pad="P$9"/>
+<connect gate="G$1" pin="VIN" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -555,7 +555,6 @@ distributor RS 193-9117</description>
 </class>
 </classes>
 <parts>
-<part name="TRANSMITTER" library="hi-link" deviceset="FX758" device=""/>
 <part name="X1" library="con-coax" deviceset="BU-SMA-G" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -569,13 +568,13 @@ distributor RS 193-9117</description>
 <part name="PWR" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="TRANSMITTER" library="custom-parts" deviceset="FX758" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="TRANSMITTER" gate="G$1" x="0" y="0"/>
 <instance part="X1" gate="G1" x="-43.18" y="5.08"/>
 <instance part="GND1" gate="1" x="-38.1" y="0"/>
 <instance part="GND3" gate="1" x="-25.4" y="0"/>
@@ -589,6 +588,7 @@ distributor RS 193-9117</description>
 <instance part="PWR" gate="G$1" x="7.62" y="-15.24" rot="R90"/>
 <instance part="P+2" gate="1" x="7.62" y="-27.94" rot="R180"/>
 <instance part="GND4" gate="1" x="5.08" y="-30.48"/>
+<instance part="TRANSMITTER" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -597,11 +597,11 @@ distributor RS 193-9117</description>
 <segment>
 <wire x1="-17.78" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="7.62" x2="-25.4" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="GND@2"/>
 <wire x1="-25.4" y1="2.54" x2="-17.78" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <junction x="-25.4" y="2.54"/>
 <pinref part="TRANSMITTER" gate="G$1" pin="GND@1"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="GND@2"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -620,15 +620,15 @@ distributor RS 193-9117</description>
 <junction x="-20.32" y="-25.4"/>
 </segment>
 <segment>
-<pinref part="TRANSMITTER" gate="G$1" pin="GND@3"/>
 <wire x1="17.78" y1="0" x2="20.32" y2="0" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="0" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="GND@4"/>
 <wire x1="20.32" y1="-5.08" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <junction x="20.32" y="-5.08"/>
 <pinref part="CAM-SUPPLY" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="-5.08" x2="45.72" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="GND@3"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="GND@4"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -639,57 +639,57 @@ distributor RS 193-9117</description>
 <net name="ANTENA" class="0">
 <segment>
 <pinref part="X1" gate="G1" pin="1"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="ANT"/>
 <wire x1="-40.64" y1="5.08" x2="-17.78" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="ANT"/>
 </segment>
 </net>
 <net name="CH1" class="0">
 <segment>
 <pinref part="CH-SEL" gate="1" pin="4"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="CS1"/>
 <wire x1="-17.78" y1="-10.16" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="CS1"/>
 </segment>
 </net>
 <net name="CH2" class="0">
 <segment>
-<pinref part="TRANSMITTER" gate="G$1" pin="CS2"/>
 <pinref part="CH-SEL" gate="1" pin="5"/>
 <wire x1="-17.78" y1="-2.54" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-2.54" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="CS2"/>
 </segment>
 </net>
 <net name="CH3" class="0">
 <segment>
-<pinref part="TRANSMITTER" gate="G$1" pin="CS3"/>
 <pinref part="CH-SEL" gate="1" pin="6"/>
 <wire x1="-17.78" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="0" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="CS3"/>
 </segment>
 </net>
 <net name="VIDEO-IN" class="0">
 <segment>
-<pinref part="TRANSMITTER" gate="G$1" pin="VIN"/>
 <pinref part="VIDEO-IN" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="5.08" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="5.08" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="AUDIO-IN" class="0">
 <segment>
-<pinref part="TRANSMITTER" gate="G$1" pin="A6.5"/>
 <pinref part="AUDIO-IN" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="2.54" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="A6.5"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="TRANSMITTER" gate="G$1" pin="+5V"/>
 <pinref part="CAM-SUPPLY" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="-2.54" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="33.02" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-12.7" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="33.02" y="-2.54"/>
+<pinref part="TRANSMITTER" gate="G$1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
