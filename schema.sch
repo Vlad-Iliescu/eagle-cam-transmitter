@@ -555,17 +555,17 @@ distributor RS 193-9117</description>
 </class>
 </classes>
 <parts>
-<part name="X1" library="con-coax" deviceset="BU-SMA-G" device=""/>
+<part name="SMA" library="con-coax" deviceset="BU-SMA-G" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="CH-SEL" library="switch-dil" deviceset="DP03" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="VIDEO-IN" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="AUDIO-IN" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="CAM-SUPPLY" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="VIDEO-IN" library="pinhead" deviceset="PINHD-1X1" device="" value="V"/>
+<part name="AUDIO-IN" library="pinhead" deviceset="PINHD-1X1" device="" value="A"/>
+<part name="CAM-SUPPLY" library="pinhead" deviceset="PINHD-1X2" device="" value="G  5V"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="PWR" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="PWR" library="pinhead" deviceset="PINHD-1X2" device="" value="G 5V"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="TRANSMITTER" library="custom-parts" deviceset="FX758" device=""/>
@@ -575,11 +575,11 @@ distributor RS 193-9117</description>
 <plain>
 </plain>
 <instances>
-<instance part="X1" gate="G1" x="-43.18" y="5.08"/>
+<instance part="SMA" gate="G1" x="-43.18" y="5.08"/>
 <instance part="GND1" gate="1" x="-38.1" y="0"/>
 <instance part="GND3" gate="1" x="-25.4" y="0"/>
 <instance part="GND5" gate="1" x="20.32" y="-7.62"/>
-<instance part="CH-SEL" gate="1" x="-20.32" y="-17.78"/>
+<instance part="CH-SEL" gate="1" x="-20.32" y="-17.78" rot="R180"/>
 <instance part="GND2" gate="1" x="-22.86" y="-30.48"/>
 <instance part="VIDEO-IN" gate="G$1" x="22.86" y="17.78" rot="R90"/>
 <instance part="AUDIO-IN" gate="G$1" x="33.02" y="2.54"/>
@@ -605,19 +605,8 @@ distributor RS 193-9117</description>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="X1" gate="G1" pin="2"/>
+<pinref part="SMA" gate="G1" pin="2"/>
 <wire x1="-38.1" y1="2.54" x2="-40.64" y2="2.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="CH-SEL" gate="1" pin="1"/>
-<wire x1="-22.86" y1="-27.94" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="CH-SEL" gate="1" pin="3"/>
-<pinref part="CH-SEL" gate="1" pin="2"/>
-<wire x1="-17.78" y1="-25.4" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-25.4" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="-22.86" y="-25.4"/>
-<junction x="-20.32" y="-25.4"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="0" x2="20.32" y2="0" width="0.1524" layer="91"/>
@@ -635,35 +624,23 @@ distributor RS 193-9117</description>
 <pinref part="PWR" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="-27.94" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="CH-SEL" gate="1" pin="4"/>
+<wire x1="-22.86" y1="-27.94" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="CH-SEL" gate="1" pin="5"/>
+<wire x1="-22.86" y1="-25.4" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-25.4"/>
+<pinref part="CH-SEL" gate="1" pin="6"/>
+<wire x1="-20.32" y1="-25.4" x2="-17.78" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-20.32" y="-25.4"/>
+</segment>
 </net>
 <net name="ANTENA" class="0">
 <segment>
-<pinref part="X1" gate="G1" pin="1"/>
+<pinref part="SMA" gate="G1" pin="1"/>
 <wire x1="-40.64" y1="5.08" x2="-17.78" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="TRANSMITTER" gate="G$1" pin="ANT"/>
-</segment>
-</net>
-<net name="CH1" class="0">
-<segment>
-<pinref part="CH-SEL" gate="1" pin="4"/>
-<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="CS1"/>
-</segment>
-</net>
-<net name="CH2" class="0">
-<segment>
-<pinref part="CH-SEL" gate="1" pin="5"/>
-<wire x1="-17.78" y1="-2.54" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-2.54" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="CS2"/>
-</segment>
-</net>
-<net name="CH3" class="0">
-<segment>
-<pinref part="CH-SEL" gate="1" pin="6"/>
-<wire x1="-17.78" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="0" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="TRANSMITTER" gate="G$1" pin="CS3"/>
 </segment>
 </net>
 <net name="VIDEO-IN" class="0">
@@ -697,14 +674,34 @@ distributor RS 193-9117</description>
 <wire x1="7.62" y1="-25.4" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="CH1" class="0">
+<segment>
+<pinref part="TRANSMITTER" gate="G$1" pin="CS1"/>
+<pinref part="CH-SEL" gate="1" pin="1"/>
+<wire x1="-17.78" y1="-5.08" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CH2" class="0">
+<segment>
+<pinref part="TRANSMITTER" gate="G$1" pin="CS2"/>
+<pinref part="CH-SEL" gate="1" pin="2"/>
+<wire x1="-17.78" y1="-2.54" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-2.54" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CH3" class="0">
+<segment>
+<pinref part="TRANSMITTER" gate="G$1" pin="CS3"/>
+<wire x1="-17.78" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="0" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="CH-SEL" gate="1" pin="3"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,-21.7212,-17.78,CH-SEL,,,,,"/>
-<approved hash="113,1,21.4588,16.9239,VIDEO-IN,,,,,"/>
-<approved hash="113,1,32.2888,3.94123,AUDIO-IN,,,,,"/>
-<approved hash="113,1,49.1935,-2.40877,CAM-SUPPLY,,,,,"/>
+<approved hash="113,1,-18.9188,-17.78,CH-SEL,,,,,"/>
 </errors>
 </schematic>
 </drawing>
